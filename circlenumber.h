@@ -1,6 +1,8 @@
 #ifndef CIRCLENUMBER_H
 #define CIRCLENUMBER_H
 
+int& sort(int* a, const int len_a, int* b, const int len_b);
+
 class circlenumber
 {
 public:

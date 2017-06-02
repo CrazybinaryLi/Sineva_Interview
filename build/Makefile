@@ -49,9 +49,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../main.cpp \
-		../circlenumber.cpp 
+		../circlenumber.cpp \
+		../sort2array.cpp 
 OBJECTS       = main.o \
-		circlenumber.o
+		circlenumber.o \
+		sort2array.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -116,7 +118,8 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../../cs-1.pro ../circlenumber.h ../main.cpp \
-		../circlenumber.cpp
+		../circlenumber.cpp \
+		../sort2array.cpp
 QMAKE_TARGET  = cs-1
 DESTDIR       = 
 TARGET        = cs-1
@@ -274,7 +277,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../circlenumber.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../main.cpp ../circlenumber.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../main.cpp ../circlenumber.cpp ../sort2array.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -319,6 +322,9 @@ main.o: ../main.cpp ../circlenumber.h
 
 circlenumber.o: ../circlenumber.cpp ../circlenumber.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o circlenumber.o ../circlenumber.cpp
+
+sort2array.o: ../sort2array.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sort2array.o ../sort2array.cpp
 
 ####### Install
 

@@ -10,7 +10,8 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    circlenumber.cpp
+    circlenumber.cpp \
+    sort2array.cpp
 
 HEADERS += \
     circlenumber.h
