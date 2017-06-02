@@ -2,7 +2,6 @@
 #include "circlenumber.h"
 
 using namespace std;
-using namespace cv;
 
 int testFunc(int x) {
     int cntx = 0;
