@@ -12,7 +12,5 @@ TEMPLATE = app
 SOURCES += main.cpp \
     circlenumber.cpp
 
-LIBS += /usr/local/lib/libopencv_world.so
-
 HEADERS += \
     circlenumber.h
