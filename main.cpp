@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     circlenumber cn(10);
 
-    cn.print();
+	cn.print();
 
 	int a1[10] = { 0,1,2,3,4,15,16,17,18,19 };
 	int b1[10] = { 0,1,2,3,4,5,6,7 };
@@ -43,6 +43,6 @@ int main(int argc, char *argv[])
 	{
 		cout << setw(3) << c1[i] << " ";
 	}
-	
+
     return 0;
 }
