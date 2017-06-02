@@ -34,5 +34,15 @@ int main(int argc, char *argv[])
 
     cn.print();
 
+	int a1[10] = { 0,1,2,3,4,15,16,17,18,19 };
+	int b1[10] = { 0,1,2,3,4,5,6,7 };
+	int len_a = 10, len_b = 8;
+	int* c1 = sort(a1, len_a, b1, len_b);
+
+	for (auto i = 0; i < len_a + len_b; i++)
+	{
+		cout << setw(3) << c1[i] << " ";
+	}
+	
     return 0;
 }
